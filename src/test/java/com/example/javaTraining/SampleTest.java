@@ -41,16 +41,16 @@ public class SampleTest {
 		  System.out.println("Google opened on Thread: " + Thread.currentThread().getId());
 	}
 	
-    @Test
-    public void FirefoxTest() {	 
-        //Initializing the firefox driver (Gecko)
-    driver = new FirefoxDriver();	  
-    driver.get("https://www.google.com"); 
-    System.out.println("page title is:" + driver.getTitle());
-	System.out.println("Google opened on Thread: " + Thread.currentThread().getId());
-    //driver.findElement(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div/div[1]/div/div[1]")).click();
-    //driver.quit();
-     }
+//    @Test
+//    public void FirefoxTest() {	 
+//        //Initializing the firefox driver (Gecko)
+//    driver = new FirefoxDriver();	  
+//    driver.get("https://www.google.com"); 
+//    System.out.println("page title is:" + driver.getTitle());
+//	System.out.println("Google opened on Thread: " + Thread.currentThread().getId());
+//    //driver.findElement(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div/div[1]/div/div[1]")).click();
+//    //driver.quit();
+//     }
 	
 //	@Test //(priority=2)
 //	public void openGoogle2()
