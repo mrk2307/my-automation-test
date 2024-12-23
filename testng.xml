@@ -4,8 +4,7 @@
   <test name="Test">
     <classes>
       <class name="com.example.javaTraining.SampleTest"/>
-      <class name="com.example.javaTraining.SampleTest"/>
-    </classes>
+      </classes>
      </test> <!-- Test -->
      <listeners>
     <listener class-name="com.example.listeners.ExtentReportListener" />
