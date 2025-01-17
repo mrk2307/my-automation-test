@@ -1,5 +1,6 @@
 package com.example.javaTraining;
 import org.openqa.selenium.By;
+import org.openqa.selenium.interactions.*;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -39,28 +40,29 @@ public class SampleTest {
 		driver.get("https://www.google.com");
 		System.out.println("page title is:" + driver.getTitle());
 		  System.out.println("Google opened on Thread: " + Thread.currentThread().getId());
+		  
+	
+		 
 	}
 	
-//    @Test
-//    public void FirefoxTest() {	 
-//        //Initializing the firefox driver (Gecko)
-//    driver = new FirefoxDriver();	  
-//    driver.get("https://www.google.com"); 
-//    System.out.println("page title is:" + driver.getTitle());
-//	System.out.println("Google opened on Thread: " + Thread.currentThread().getId());
-//    //driver.findElement(By.xpath("//*[@id=\"app\"]/div/div/div[2]/div/div[1]/div/div[1]")).click();
-//    //driver.quit();
-//     }
+    @Test
+    public void FirefoxTest() {	 
+        //Initializing the firefox driver (Gecko)
+    driver = new FirefoxDriver();	  
+    driver.get("http://www.google.com"); 
+
+    System.out.println("page title is:" + driver.getTitle());
+	System.out.println("Google opened on Thread: " + Thread.currentThread().getId());
+
+     }
 	
-//	@Test //(priority=2)
-//	public void openGoogle2()
-//	{
-//		driver.get("https://www.google.com");
-////		WebElement button = driver.findElement(By.xpath(" "));
-////		button.click();
-//		System.out.println("page title is:" + driver.getTitle());
-//		  System.out.println("Google opened on Thread: " + Thread.currentThread().getId());
-//	}
+	@Test //(priority=2)
+	public void openGoogle2()
+	{
+		 driver.get("https://www.google.com");
+		 System.out.println("page title is:" + driver.getTitle());
+		 System.out.println("Google opened on Thread: " + Thread.currentThread().getId());
+	}
 	
 	@AfterMethod
 	public void teardown()

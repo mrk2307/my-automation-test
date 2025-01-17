@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite" >
+<suite name="Suite" parallel="methods" thread-count="2"> <!-- Set parallel execution for tests -->
   <test name="Test">
     <classes>
       <class name="com.example.javaTraining.SampleTest"/>
-      </classes>
-     </test> <!-- Test -->
-     <listeners>
+      <!-- Add more classes if needed -->
+    </classes>
+  </test> <!-- Test -->
+  
+  <listeners>
     <listener class-name="com.example.listeners.ExtentReportListener" />
-</listeners>
+  </listeners>
 </suite> <!-- Suite -->
